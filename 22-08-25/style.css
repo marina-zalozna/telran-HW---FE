@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+body {
+  margin: 0
+}
+ul, a {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #F0F5F5;
+  
+}
+.header__search {
+  display: flex;
+  align-items: center;
+}
+.header__text {
+  padding-left: 10px;
+}
+h2 {
+  font-family: 'Inter';
+  font-weight: bold;
+}
+h3 {
+  font-family: 'Inter';
+  font-weight: bold;
+}
+h4 {
+  font-family: 'Inter';
+  font-weight: 400;
+  color: #7C827B;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+}
+.about {
+  width: 15vw;
+  padding-left: 15px;
+  border-right: 1px solid #F0F5F5;
+}
+.about__thumb {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #F0F5F5;
+}
+.about__item {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #7C827B;
+}
+.about__item:hover {
+  color: #000;
+  border-left: 2px solid black;
+}
+.about__settings {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.about__desk {
+  padding-top: 200px;
+  text-align: center;
+}
+p {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: small;
+  color: #7C827B;
+}
+.about__button {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: center;
+  background: #000;
+  color: white;
+}
+.card {
+  width: 30vw;
+  padding: 30px;
+  border-right: 1px solid #F0F5F5;
+}
+.card__image {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.card__item {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+a {
+  font-family: 'Inter';
+  font-weight: 600;
+}
+.card__thumb {
+  display: flex;
+}
+.card__name {
+  padding-left: 20px;
+}
+.card__green {
+  color: rgb(24, 207, 24);
+}
+.card__red {
+  color: red;
+}
+.card__all {
+  display: block;
+  text-align: center;
+}
+.info {
+  width: 55vw;
+  padding: 40px;
+}
+.info__total {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #F0F5F5;
+}
+.info__image {
+  width: 40%;
+}
+.info__thumb {
+  width: 30%;
+  text-align: center;
+}
+.info__potential {
+  width: 100%;
+}
+.info__list {
+  display: flex;
+}
+.info__item {
+  display: flex;
+  padding-right: 50px;
+}
+.info__name {
+  padding-left: 20px;
+}
+.info__all {
+  display: block;
+  text-align: center;
+  padding-top: 50px;
+}

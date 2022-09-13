@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: white;
+      padding: 30px;
+    }
+    .wrapper {
+      display: flex;
+      background-color: #D0D0D0;
+      height: 100vh;
+      margin: 30px;
+      padding: 30px;
+      gap: 15px;
+      box-sizing: border-box;
+      color: white;
+      font-size: 50px;
+      font-weight: bold;
+       
+    }
+
+      
+
+    .block1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+      background-color: #FF7676;
+    }
+   
+    .thumb {
+      width: 60%;
+      display: flex;
+      flex-wrap: wrap;
+      /* gap: 15px; */
+    }
+    .block2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: calc(50% - 30px);
+      background-color: #C2FF76;
+      margin-bottom: 30px;
+    }
+    .thumb2 {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      gap: 15px;
+    }
+    .block3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      background-color: #FF9BF7;
+    }
+    .block4 {
+      width: 50%;
+      margin-bottom: -10px;
+       
+    }
+    .block4a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(50% - 10px);
+      background-color: #9BA4FF;
+      margin-bottom: 10px;
+    }
+    @media (max-width:767px) {
+        .wrapper {
+        flex-direction: column;
+        }
+        .block1 {
+          width: 100%;
+          height: 30vh;
+        }
+        .thumb {
+          width: 100%;
+          height: 70vh;
+        }
+        .block2 {
+          height: 30vh;
+          margin-bottom: 15px;
+        }
+      }
+    
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="block1">1</div>
+    <div class="thumb">
+      <div class="block2">2</div>
+      
+        <div class="thumb2">
+          <div class="block3">3</div>
+          <div class="block4">
+            <div class="block4a">4a</div>
+            <div class="block4a">4b</div>
+          </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

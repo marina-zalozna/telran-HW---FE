@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background: #2D273D;
+      font-family: 'Roboto', sans-serif ;
+    }
+
+    .wrapper {
+      display: flex;
+    flex-wrap: wrap;
+      width: 1200px;
+      height: calc(1200px / 3 * 2);
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: calc(100% / 3);
+      height: calc(100% / 2);
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .block--purple {
+      background: #303297;
+    }
+
+    .block--red {
+      background: #FF4D4F;
+    }
+
+    .block--blue {
+      background: #2A79FF;
+    }
+
+    .block--black {
+      background: #2A272B;
+    }
+
+    .block--white {
+      background: #FFFFFF;
+    }
+
+    .block__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .block__logo,
+    .block__subtitle {
+      font-size: 1rem;
+      line-height: 1;
+      margin: 0;
+    }
+
+    .block__logo, 
+    .block__title {
+      color: #EFF0F7;
+    }
+
+    .block__subtitle,
+    .block__tags {
+      color: #B4B6DA;
+      font-size: .75rem;
+    }
+
+    .block__subtitle {
+      font-weight: 400;
+    }
+
+    .block__subtitle--white {
+      color: #939194;
+    }
+
+    .is-uppercase {
+      text-transform: uppercase;
+    }
+
+    .block__title {
+      margin: 10px 0;
+    }
+
+    .block__title--black {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="block block--purple">
+      <div class="block__content">
+         <div class="block__header">
+           <h2 class="block__logo">youami</h2>
+           <h2 class="block__subtitle is-uppercase">cashier app</h2>
+         </div>
+         <div class="block__desk">
+            <h2 class="block__subtitle is-uppercase">
+              getting started
+            </h2>
+            <h1 class="block__title">
+              What type of business  should I choose?
+            </h1>
+            <h2 class="block__subtitle">
+             1 of 10
+            </h2>
+         </div>
+      </div>
+      <div class="block__tags">
+        <h2>
+          # our favorite question
+        </h2>
+      </div>
+    </div>
+    <div class="block block--red">
+      <div class="block__content">
+         <div class="block__header">
+           <h2 class="block__logo">youami</h2>
+           <h2 class="block__subtitle is-uppercase">personal account</h2>
+         </div>
+         <div class="block__desk">
+            <h2 class="block__subtitle is-uppercase">
+              what's new?
+            </h2>
+            <h1 class="block__title">
+              Pay conveniently with credit card
+            </h1>
+            <h2 class="block__subtitle">
+             1 of 10
+            </h2>
+         </div>
+      </div>
+      <div class="block__tags">
+        <h2>
+          # better every day
+        </h2>
+      </div>
+    </div>
+    <div class="block block--purple">
+      <div class="block__content">
+         <div class="block__header">
+           <h2 class="block__logo">youami</h2>
+           <h2 class="block__subtitle is-uppercase">cashier app</h2>
+         </div>
+         <div class="block__desk">
+            <h2 class="block__subtitle is-uppercase">
+              getting started
+            </h2>
+            <h1 class="block__title">
+              How to turn off the TV correctly?
+            </h1>
+            <h2 class="block__subtitle">
+             1 of 10
+            </h2>
+         </div>
+      </div>
+      <div class="block__tags">
+        <h2>
+          # our favorite question
+        </h2>
+      </div>
+    </div>
+    <div class="block block--blue">
+      <div class="block__content">
+         <div class="block__header">
+           <h2 class="block__logo">youami</h2>
+           <h2 class="block__subtitle is-uppercase">personal account</h2>
+         </div>
+         <div class="block__desk">
+            <h2 class="block__subtitle is-uppercase">
+              what's new?
+            </h2>
+            <h1 class="block__title">
+              Where do you find fresh underwear
+            </h1>
+            <h2 class="block__subtitle">
+             1 of 10
+            </h2>
+         </div>
+      </div>
+      <div class="block__tags">
+        <h2>
+          # our favorite question
+        </h2>
+      </div>
+    </div>
+    <div class="block block--black">
+      <div class="block__content">
+         <div class="block__header">
+           <h2 class="block__logo">youami</h2>
+           <h2 class="block__subtitle is-uppercase">cashier app</h2>
+         </div>
+         <div class="block__desk">
+            <h2 class="block__subtitle is-uppercase">
+              getting started
+            </h2>
+            <h1 class="block__title">
+              Do I even need to label my goods?
+            </h1>
+            <h2 class="block__subtitle">
+             1 of 10
+            </h2>
+         </div>
+      </div>
+      <div class="block__tags">
+        <h2>
+          # our favorite question
+        </h2>
+      </div>
+    </div>
+    <div class="block block--white">
+      <div class="block__content">
+         <div class="block__header">
+           <h2 class="block__logo block__title--black">youami</h2>
+           <h2 class="block__subtitle block__subtitle--white is-uppercase">personal account</h2>
+         </div>
+         <div class="block__desk">
+            <h2 class="block__subtitle block__subtitle--white is-uppercase">
+              what's new?
+            </h2>
+            <h1 class="block__title block__title--black">
+              Where have you tasted the most delicious sushi?
+            </h1>
+            <h2 class="block__subtitle block__subtitle--white">
+             1 of 10
+            </h2>
+         </div>
+      </div>
+      <div class="block__tags">
+        <h2>
+          # our favorite question
+        </h2>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
