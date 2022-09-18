@@ -5,85 +5,211 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .calendar {
-      padding: 0;
-      width: 400px;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .calendar__item {
-      list-style: none;
-      width: calc(100% / 7);
-      aspect-ratio: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .calendar__item--small {
-      font-size: .75rem;
-    }
-    .calendar__item--grey {
-      color: grey;
-    }
-    .calendar__item--active {
-      background: black;
-      color: white;
-    }
-  </style>
+  <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section>
-    <h2>
-      Schedule
-    </h2>
-    <ul class="calendar">
-      <li class="calendar__item calendar__item--small">Sun</li>
-      <li class="calendar__item calendar__item--small">Mon</li>
-      <li class="calendar__item calendar__item--small">Tue</li>
-      <li class="calendar__item calendar__item--small">Wed</li>
-      <li class="calendar__item calendar__item--small">Thu</li>
-      <li class="calendar__item calendar__item--small">Fri</li>
-      <li class="calendar__item calendar__item--small">Sat</li>
-    
-      <li class="calendar__item calendar__item--grey">26</li>
-      <li class="calendar__item calendar__item--grey">27</li>
-      <li class="calendar__item calendar__item--grey">28</li>
-      <li class="calendar__item calendar__item--grey">29</li>
-      <li class="calendar__item calendar__item--grey">30</li>
-      <li class="calendar__item">1</li>
-      <li class="calendar__item">2</li>
-      <li class="calendar__item">3</li>
-      <li class="calendar__item">4</li>
-      <li class="calendar__item">5</li>
-      <li class="calendar__item calendar__item--active">6</li>
-      <li class="calendar__item">7</li>
-      <li class="calendar__item">8</li>
-      <li class="calendar__item">9</li>
-      <li class="calendar__item">10</li>
-      <li class="calendar__item">11</li>
-      <li class="calendar__item">12</li>
-      <li class="calendar__item">13</li>
-      <li class="calendar__item">14</li>
-      <li class="calendar__item">15</li>
-      <li class="calendar__item">16</li>
-      <li class="calendar__item">17</li>
-      <li class="calendar__item">18</li>
-      <li class="calendar__item">19</li>
-      <li class="calendar__item">20</li>
-      <li class="calendar__item">21</li>
-      <li class="calendar__item">22</li>
-      <li class="calendar__item">23</li>
-      <li class="calendar__item">24</li>
-      <li class="calendar__item">25</li>
-      <li class="calendar__item">26</li>
-      <li class="calendar__item">27</li>
-      <li class="calendar__item">28</li>
-      <li class="calendar__item">29</li>
-      <li class="calendar__item">30</li>
-      
-
+  <button type="button" class="burger" onclick="toggleMenu()">
+      <i class="las la-times"></i>
+    </button>  
+  <aside class="menu">   
+    <div class="logo">
+      <img src="./image/logo.png" alt="">
+      Memo
+    </div>
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a href="./" class="menu__link">
+          <i class="las la-school"></i>
+          <span class="menu__item--name">Courses</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a href="./" class="menu__link">
+          <i class="las la-credit-card"></i>
+          <span class="menu__item--name">Payment</span>
+        </a>
+      </li>   
+      <li class="menu__item">
+        <a href="./" class="menu__link">
+          <i class="las la-comment-dots"></i>
+          <span class="menu__item--name">Chat</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a href="./" class="menu__link">
+          <i class="las la-user-friends"></i>
+          <span class="menu__item--name">Groups</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a href="./" class="menu__link">
+          <i class="las la-graduation-cap"></i>
+          <span class="menu__item--name">Students</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a href="./" class="menu__link">
+          <i class="las la-bullhorn"></i>
+          <span class="menu__item--name">Support</span>
+        </a>
+      </li>
+  </aside>
+  <main>
+    <div class="head">
+      <div class="head__user">
+        <img src="./image/avatar.png" width="50px" height="50px" alt="" />
+        <div class="head__name">
+          <h4 class="head__name--title">Leslie Alexander</h4>
+          <span class="head__name--town">Los Angeles, CA</span>
+        </div> 
+      </div>
+      <div class="search">
+        <input class="search__input" type="text" placeholder="Search"/>
+        <span class="search__icon">
+          <i class="las la-search"></i>
+        </span>
+      </div>    
+    </div>
+    <h1>Courses</h1>
+    <ul class="condition">
+      <li class="condition__list">All</li>
+      <li class="condition__list">Current</li>
+      <li class="condition__list">Pending</li>
+      <li class="condition__list">Complited</li>
     </ul>
+    <div class="courses">
+      <img src="./image/program.png" alt="">
+      <div class="courses__date">
+        <div class="courses__name"> 
+          Programming - Oct 09, 2022
+        </div>
+        <h4 class="courses__text">Object-Oriented Programming in Java</h4>
+      </div>
+    </div>
+    <div class="courses courses--back">
+      <h4 class="courses__title" >How to track you course progress easily?</h4>
+      <div>
+        <a class="courses__link" href="">Find more</a>
+      </div>
+    </div>
+    <div class="courses">
+      <img src="./image/flow.png" alt="">
+      <div class="courses__date">
+        <div class="courses__name"> 
+          Design - Sep 17, 2022
+        </div>
+        <h4 class="courses__text">Visual Elements of User Interface Design</h4>
+      </div>
+    </div>
+    <div class="courses">
+      <img src="./image/design.png" alt="">
+      <div class="courses__date">
+        <div class="courses__name"> 
+          Design - Aug 19, 2022
+        </div>
+        <h4 class="courses__text">The Strategy of Content Marketing</h4>
+      </div>
+    </div>
+  </main>  
+  <section class="timetable">
+    <div>
+      <h4>Schedule</h4>
+      <ul class="timetable__list">
+        <li class="timetable__item timetable__item--small">Sun</li>
+        <li class="timetable__item timetable__item--small">Mon</li>
+        <li class="timetable__item timetable__item--small">Tue</li>
+        <li class="timetable__item timetable__item--small">Wed</li>
+        <li class="timetable__item timetable__item--small">Thu</li>
+        <li class="timetable__item timetable__item--small">Fri</li>
+        <li class="timetable__item timetable__item--small">Sat</li>
+    
+        <li class="timetable__item timetable__item--grey">26</li>
+        <li class="timetable__item timetable__item--grey">27</li>
+        <li class="timetable__item timetable__item--grey">28</li>
+        <li class="timetable__item timetable__item--grey">29</li>
+        <li class="timetable__item timetable__item--grey">30</li>
+        <li class="timetable__item">1</li>
+        <li class="timetable__item">2</li>
+        <li class="timetable__item">3</li>
+        <li class="timetable__item">4</li>
+        <li class="timetable__item">5</li>
+        <li class="timetable__item timetable__item--active">6</li>
+        <li class="timetable__item">7</li>
+        <li class="timetable__item">8</li>
+        <li class="timetable__item">9</li>
+        <li class="timetable__item">10</li>
+        <li class="timetable__item">11</li>
+        <li class="timetable__item">12</li>
+        <li class="timetable__item">13</li>
+        <li class="timetable__item">14</li>
+        <li class="timetable__item">15</li>
+        <li class="timetable__item">16</li>
+        <li class="timetable__item">17</li>
+        <li class="timetable__item">18</li>
+        <li class="timetable__item">19</li>
+        <li class="timetable__item">20</li>
+        <li class="timetable__item">21</li>
+        <li class="timetable__item">22</li>
+        <li class="timetable__item">23</li>
+        <li class="timetable__item">24</li>
+        <li class="timetable__item">25</li>
+        <li class="timetable__item">26</li>
+        <li class="timetable__item">27</li>
+        <li class="timetable__item">28</li>
+        <li class="timetable__item">29</li>
+        <li class="timetable__item">30</li>
+      </ul>
+    </div>
+    <div class="timeline">
+      <h4>Upcoming</h4>
+      <div class="timeline__thumb">
+        <ul class="timeline__list">
+          <li class="timeline__item">09:00</li>
+          <li class="timeline__item">10:00</li>
+          <li class="timeline__item">11:00</li>
+          <li class="timeline__item">12:00</li>
+          <li class="timeline__item">13:00</li>
+          <li class="timeline__item">14:00</li>
+          <li class="timeline__item">15:00</li>
+          <li class="timeline__item">16:00</li>
+          <li class="timeline__item">17:00</li>
+        </ul>
+        <ul class="timeline__lessons">
+          <li class="timeline__lessons--item">
+            <img class="timeline__lessons--image" src="./image/10.png" alt="">
+            <div class="timeline__lessons--block">
+              <h6 class="timeline__lessons--time">10:00 - 10:30</h6>
+              <h4 class="timeline__lessons__text">User Interface Design</h4>
+            </div> 
+          </li>
+          <li class="timeline__lessons--item">
+            <img class="timeline__lessons--image" src="./image/13.png" alt="">
+            <div class="timeline__lessons--block">
+              <h6 class="timeline__lessons--time">13:00 - 13:30</h6>
+              <h4 class="timeline__lessons__text">Programming in Java</h4>
+            </div> 
+          </li>
+          <li class="timeline__lessons--item">
+            <img class="timeline__lessons--image" src="./image/16.png" alt="">
+            <div class="timeline__lessons--block">
+              <h6 class="timeline__lessons--time">16:00 - 16:30</h6>
+              <h4 class="timeline__lessons__text">The Strategy of Marketing</h4>
+            </div> 
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
+  <script>
+    function toggleMenu() {
+          var sidebar = document.querySelector('.menu');
+          var burger = document.querySelector('.burger');
+
+          sidebar.classList.toggle('menu--open');
+          burger.classList.toggle('burger--open');
+      }
+
+  </script>
 </body>
 </html>
