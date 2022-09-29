@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    html, body, .wrapper{
+    height: 100%;
+    width: 100%;
+   }
+    .wrapper {
+      display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+        "thumb1 thumb2 thumb2 thumb3"
+        "thumb1 thumb4 thumb5 thumb6"
+        "thumb1 thumb7 thumb8 thumb6"
+        ;
+    grid-gap: 10px;
+    background: #2B2E56;
+    }
+    .thumb1 {
+      grid-area: thumb1;
+      background: #6DBE4F;
+    }
+    .thumb2 {
+      grid-area: thumb2;
+      background: #6DBE4F;
+    }
+    .thumb3 {
+      grid-area: thumb3;
+      background: #EC3437;
+    }
+    .thumb4 {
+      grid-area: thumb4;
+      background: #FBB22F;
+    }
+    .thumb5 {
+      grid-area: thumb5;
+      background: #EC3437;
+    }
+    .thumb6 {
+      grid-area: thumb6;
+      background: #6DBE4F;
+    }
+    .thumb7 {
+      grid-area: thumb7;
+      background: #EC3437;
+    }
+    .thumb8 {
+      grid-area: thumb8;
+      background: #FBB22F;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <div class="thumb1">1</div>
+    <div class="thumb2">2</div>
+    <div class="thumb3">3</div>
+    <div class="thumb4">4</div>
+    <div class="thumb5">5</div>
+    <div class="thumb6">6</div>
+    <div class="thumb7">7</div>
+    <div class="thumb8">8</div>
+  </div>
+</body>
+</html>
